@@ -22,7 +22,7 @@ transform pers:
     ysize 1125
 
 init python:
-solved = []
+    solved = []
     import random
 
     def solve(num, solved):
