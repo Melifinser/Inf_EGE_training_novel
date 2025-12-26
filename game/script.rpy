@@ -22,7 +22,9 @@ transform pers:
     ysize 1125
 
 init python:
-    solved = []
+    solved = [[i-i] for i in range(1,28)]
+
+init python:
     import random
 
     def solve(num, solved):
@@ -315,7 +317,6 @@ label day_2:
         while not(m > 0 and m <=5):
             renpy.say(a, "Нет, так не пойдёт, реши хотя-бы одну, но не больше 5.")
             m = int(renpy.input("Сколько задачь хочешь решить(до пяти)?"))
-        solved = []
         for i in range (m):
             solved[7].append(solve(7,solved))
     
