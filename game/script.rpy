@@ -33,9 +33,9 @@ init python:
         f = open(renpy.loader.transfn("ans.txt"),"r")
         m = f.readlines()
         mas = list(m[num-1].split())
-        x = random.randint(1,len(mas))
+        x = random.randint(1,len(mas)-1)
         while x in solved[num]:
-            x = random.randint(1,len(mas))
+            x = random.randint(1,len(mas)-1)
         renpy.show(f"task {num}_{x}.png", what = Image(f"{num}/{num}_{x}.png"), at_list=[tas])
         pans = renpy.input("Ответ:",length=32)
         correct_ans = mas[x]
@@ -54,9 +54,9 @@ init python:
         f = open(renpy.loader.transfn("ans.txt"),"r")
         m = f.readlines()
         mas = list(m[num-1].split())
-        x = random.randint(1,len(mas))
+        x = random.randint(1,len(mas)-1)
         while x in solved[num]:
-            x = random.randint(1,len(mas))
+            x = random.randint(1,len(mas)-1)
         renpy.show(f"task {num}_{x}.png", what = Image(f"{num}/{num}_{x}.png"), at_list=[tas])
         pans = renpy.input("Ответ:",length=32)
         correct_ans = mas[x]
