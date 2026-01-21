@@ -102,7 +102,7 @@ define gui.textbox_height = 278
 
 ## Местоположение текстового окна по вертикали экрана. 0.0 — верх, 0.5 — центр
 ## и 1.0 — низ.
-define gui.textbox_yalign = 0.95
+define gui.textbox_yalign = 0.93
 
 
 ## Местоположение имени говорящего персонажа по отношению к текстовому окну.
@@ -123,7 +123,7 @@ define gui.namebox_height = None
 
 ## Границы окна, содержащего имя персонажа слева, сверху, справа и снизу по
 ## порядку.
-define gui.namebox_borders = Borders(5, 5, 5, 5)
+define gui.namebox_borders = Borders(2, 2, 2, 2)
 
 ## Если True, фон текстового окна будет моститься (расширяться по эффекту
 ## плитки). Если False, фон текстового окна будет фиксированным.
@@ -134,7 +134,7 @@ define gui.namebox_tile = False
 ## значения в пикселях слева и сверху от текстового окна или процентное
 ## отношение, например, 0.5 для центрирования.
 define gui.dialogue_xpos = 370
-define gui.dialogue_ypos = 70
+define gui.dialogue_ypos = 60
 
 ## Максимальная ширина текста диалога в пикселях.
 define gui.dialogue_width = 1160
